@@ -1,0 +1,828 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Sen&display=swap');
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+  cursor: none;
+  overflow-x: hidden;
+}
+
+body{
+  font-family: 'Sen', sans-serif !important;
+  margin: 0;
+}
+
+.cursor{
+  width: 25px;
+  height: 25px;
+  /* border: 1px solid white; */
+  border-radius: 50%;
+  position: absolute;
+  /* transition-duration: 200ms;
+  transition-timing-function: ease-out; */
+  background-color: orange;
+  z-index: 999;
+  pointer-events: none;
+}
+
+.OnlyOnMobile{
+  display: none;
+}
+#loading{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: black url('images/loading animation.gif') no-repeat center;
+  z-index: 99999;
+  animation: load 5s 1;
+}
+
+.TopblackDiv{
+  background-color: black;
+  color: white;
+  height: 800px;
+}
+
+.TopBlueDiv{
+  background-color: #181823;
+  color: #8C8C91;
+  text-align: center;
+  height: 800px;
+}
+
+.Navbar{
+  width: 99%;
+}
+
+.TopblackDiv h4{
+  padding-top: 30px;
+  padding-left: 15%;
+  font-weight: bold;
+}
+
+.TopBlueDiv h6{
+  padding-top: 30px;
+  height: 90px;
+  width: 120px;
+  font-weight: bold;
+  /* margin-right: -30%; */
+}
+
+.TopBlueDiv a{
+  text-decoration: none !important;
+  color: #8C8C91;
+  transition: 0.5s;
+}
+
+.TopBlueDiv h6:hover{
+  color: #02DEB1;
+}
+
+#contact{
+  background-color: #5221E6;
+  color: white;
+}
+
+.ProfileImage img{
+  /* width: 650px;*/
+  height: 600px;
+  width: 48%;
+  /* height: 90%; */
+  position: absolute;
+  top: 100px;
+  animation: boy 3s linear;
+}
+
+.ProfileImage h1{
+  color: white;
+  font-size: 500%;
+  /* width: 700px; */
+  /* position: absolute; */
+  /* top: 200px; */
+  /* right: 18%; */
+  animation: text1 3s linear;
+  font-weight: bold;
+}
+
+.ProfileImage h3{
+  font-family: 'Architects Daughter', cursive;
+  color: #DF0A0A;
+  width: 100px;
+  font-size: 30px;
+  /* top: 310px; */
+  /* right: 620px; */
+  /* right: 53%; */
+  margin-left: 6%;
+  animation: text1 3s linear;
+}
+.ProfileImage h2{
+  color: white;
+  /* width: 700px; */
+  font-size: 45px;
+  /* position: absolute; */
+  /* top: 350px; */
+  /* right: 22%; */
+  animation: text1 3s linear;
+  font-weight: bold;
+}
+
+.ProfileImage h6{
+  color: white;
+  width: 600px;
+  /* position: absolute; */
+  /* top: 450px; */
+  /* right: 16%; */
+  padding-top: 40px;
+  font-size: 20px;
+  animation: text1 3.5s linear;
+}
+
+.TopText{
+  position: absolute;
+  top: 230px;
+  right: 10%;
+}
+
+.header hr{
+  background-color: #8C8C91;
+}
+.HorizontalLine{
+  position: absolute;
+  top: 57%;
+  right: 82%;
+  /* top: 373px; */
+  /* right: 630px; */
+  /* right: 54%; */
+  width: 80px;
+  height: 4px;
+  transform: rotate(165deg);
+  background-color: #DF0A0A;
+  animation: text1 3s linear;
+}
+
+.AboutMe{
+  background-color: black;
+  color: white;
+}
+
+.AboutMe img{
+  width: 100%;
+  height: 95%;
+}
+
+.AboutMe h1{
+  color: #9360FF;
+  font-weight: bold;
+  font-size: 70px;
+  margin-bottom: 40px;
+}
+
+.AboutMe h6{
+  width: 90%;
+  letter-spacing: 2px;
+  line-height: 30px;
+  font-size: 15px;
+}
+.TextPart{
+  padding-top: 5%;
+  padding-left: 8% !important;
+}
+
+.AboutMe button{
+  margin-top: 10%;
+  border: none;
+  padding-top: 10px;
+  border-bottom: 1px solid white;
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+}
+
+.AboutMe button:hover{
+  background-color: #5221E6;
+  padding-left: 25px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  color: white;
+  transition: 0.5s ease-in;
+}
+
+.Experience{
+  background-color: black;
+    padding-top: 5%;
+    padding-left: 8% !important;
+    color: white;
+}
+
+.Experience h1{
+  font-size: 60px;
+  width: 95%;
+  color: #FFCC00;
+  font-weight: bold;
+}
+
+.Experience h6{
+  font-size: 15px;
+}
+
+.small{
+  font-size : 10px;
+}
+
+.Experience img{
+  margin-top: -20px !important;
+  width: 250px;
+  height: 250px;
+}
+
+.Experiences{
+  text-align: left;
+  padding-left: 10%;
+}
+
+.Experiences h1{
+  color: #8491A0;
+  font-size: 120px;
+}
+
+.Experiences h6{
+  font-size: 16px;
+  color: 8491A0;
+  opacity: 0.8;
+  width: 65%;
+  line-height: 27px;
+}
+
+.Experiences p{
+  font-size: 23px;
+}
+
+.Hunik span{
+  color: #4690FF;
+}
+
+.Lfyd span{
+  color: #B69CFF;
+}
+
+.EclipseSection{
+  background-color: black;
+}
+.Ellipse{
+  width: 100%;
+}
+
+.SkillSet{
+  background-color: black;
+    padding-top: 1%;
+    padding-left: 8% !important;
+    color: white;
+}
+
+.SkillSet h1{
+  color: #00B7FF;
+  font-size: 70px;
+  width: 250px;
+}
+
+.SkillSet h6{
+  font-size: 15px;
+  color: 8491A0;
+  width: 75%;
+  line-height: 30px;
+}
+
+.loading_bar{
+  width: 200px !important;
+  padding-bottom: 30px;
+  padding-left: 25px;
+}
+
+.SkillSet img{
+  width: 100px;
+  margin-top: -20px !important;
+}
+
+.FlexDiv{
+  display: flex;
+}
+
+/* .SkillsList{
+  padding-top: 20px !important;
+}
+
+.skills2{
+  padding-top: 60px !important;
+} */
+
+.SkillSet h5{
+  font-weight: bold;
+}
+.SkillsList img{
+  width: 60px;
+}
+
+.SkillSet .row{
+  margin-top: 50px;
+}
+
+.PastWorks{
+  background-color: black;
+  padding-top: 1%;
+  padding-left: 8% !important;
+  color: white;
+}
+
+.PastWorks h1{
+  color: #00C381;
+  font-size: 60px;
+  width: 50%;
+}
+
+.PastWorks .FlexDiv img{
+  margin-top: -90px !important;
+}
+
+.PastWorksText{
+  padding-top: 50px;
+}
+
+.PastWorks h5{
+  margin-top: 50px;
+  color: #B2B2B2;
+}
+
+.Project{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.Project img{
+  width: 90%;
+}
+
+.Project button{
+  padding: 25px 25px;
+  border: 1px solid #5221E6;
+  background-color: black;
+  color: white;
+  margin-top: 50px;
+  font-weight: bold;
+}
+
+.Project button:hover{
+  background-color: #5221E6;
+  box-shadow: 0px 2px 73px -1px rgba(82,33,230,0.92);
+  transform: translateY(-5px);
+  transform: rotateY(-10deg);
+}
+
+.MoveTop{
+  margin-top: -50px !important;
+}
+
+.PeopleSay{
+  padding-top: 5%;
+  padding-left: 8% !important;
+  color: white;
+  background-color: black;
+}
+
+.PeopleSay h1{
+  color: #FF3366;
+  font-size: 60px;
+}
+
+.PeopleSay h6{
+  width: 90%;
+  color: #8491A0;
+}
+
+.PeopleSay .card{
+  border-radius: 0 !important;
+  width: 94%;
+  color: white;
+  border: 1px solid white;
+  margin-bottom: 20px;
+  /* background-color: black; */
+}
+
+
+.PeopleSay .card .card-body{
+  background-color: black;
+  padding: 50px 40px !important;
+}
+
+.PeopleSay .card-text{
+  font-size: 25px;
+}
+
+.Contact{
+  padding-top: 1%;
+  padding-left: 8% !important;
+  color: white;
+  background-color: black;
+}
+
+.Contact h6{
+  color: 8491A0 !important;
+  opacity: 0.6;
+  margin-top: 30px;
+  width: 85%;
+}
+
+.Contact h1{
+  font-size: 60px;
+}
+
+.Contact input{
+  width: 80%;
+  height: 40px;
+  color: white;
+  background-color: #181823;
+  border: none;
+}
+
+.Contact label{
+  font-weight: bold;
+}
+.Contact textarea{
+  width: 80%;
+  height: 100px;
+  color: white;
+  background-color: #181823;
+  border: none;
+}
+
+.Contact button{
+  width: 80%;
+  height: 80px;
+  color: white;
+  background-color: #5221E6;
+  border: none;
+  font-weight: bold;
+  border-radius: 0;
+}
+
+.Grafitti img{
+  width: 100%;
+  height: 300px;
+}
+
+.Grafitti{
+  background-color: black;
+}
+
+.footer{
+  background-color: #181823;
+  padding-top: 5%;
+  padding-left: 8% !important;
+  color: white;
+}
+
+.footer h2{
+  font-weight: bold;
+}
+
+.footer ul li{
+  list-style-type: none;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.footer h6{
+  color: 8491A0 !important;
+  opacity: 0.6;
+}
+
+.NavbarMobile{
+  background-color: black !important;
+  color: white !important;
+  height: 50px;
+}
+
+.blueNavbar a{
+  text-decoration: none !important;
+}
+
+ul li{
+  list-style-type: none;
+}
+
+
+.header nav{
+  margin-top: -35px;
+  margin-bottom: -15px;
+}
+.navbar-brand{
+  margin-left: 3%;
+  margin-top: 2rem;
+  margin-right: 45%;
+  color: white !important;
+  font-weight: bolder;
+}
+
+.navbar-toggler-icon{
+  margin-top: 3rem;
+}
+
+.blueNavbar{
+  height: 100%;
+  width: 100vw !important;
+  padding-top: 5%;
+  background-color: #181823;
+  color: white !important;
+  margin: 0 -30px 0 -20px;
+}
+
+.blueNavbar li{
+  padding-top: 3%;
+  padding-left: 10%;
+  padding-bottom: 3%;
+}
+
+.blueNavbar h6{
+  color: white !important;
+  opacity: 0.7;
+  font-weight: bold;
+}
+
+.blueNavbar h6:hover{
+  color: #02DEB1 !important;
+}
+
+.contactBlue{
+  background-color: #5221E6;
+  padding: 30px 10% !important;
+  margin: -5% 0 !important;
+}
+/* .OrangeDiv img{
+  position: sticky;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+} */
+
+.scroll-top {
+  position: fixed;
+  bottom: 10px;
+  right: 30px;
+  z-index: 99;
+  color: white;
+  border-radius: 100%;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
+}
+
+.scroll-top img {
+  width: 50px;
+  height: 50px;
+}
+
+@keyframes boy {
+  0%{
+    margin-left: -1000px;
+  }
+
+  100%{
+    margin-left: 0px;
+  }
+}
+
+@keyframes text1 {
+  0%{
+    margin-right: -1000px;
+  }
+
+  100%{
+    margin-right: 0;
+  }
+}
+
+@media (max-width:762px) {
+  html{
+    cursor: pointer;
+  }
+  body{
+    background-color: black !important;
+  }
+
+  .MoveTop{
+    margin-top: 30px !important;
+  }
+.displayOnlyOnScreen{
+  display: none;
+}
+
+.AboutMe h1{
+  font-size: 35px;
+}
+
+.Experience h1{
+  font-size: 35px;
+}
+
+.SkillSet h1{
+  font-size: 35px;
+}
+
+.PastWorks h1{
+  font-size: 35px;
+}
+
+.PeopleSay h1{
+  font-size: 35px;
+}
+
+.Contact h1{
+  font-size: 35px;
+}
+
+.OnlyOnMobile{
+  display: contents;
+}
+
+.ProfileImageMobile img{
+  width: 100%;
+}
+
+.ProfileImageMobile h2{
+  font-weight: bold;
+  color: white;
+  width: 98%;
+  padding-left: 10% !important;
+}
+
+.ProfileImageMobile h5{
+  color: white;
+  width: 98%;
+  padding-left: 10% !important;
+}
+
+.AboutMe{
+  padding-left: 4% !important;
+}
+.AboutMe h6{
+  line-height: 25px;
+}
+
+.AboutMe button{
+  margin-bottom: 20px;
+}
+
+.Experience .Number{
+  font-size: 100px;
+}
+.Experiences h6{
+  width: 85%;
+}
+
+.Experiences{
+  padding-left: 0;
+}
+
+.SkillSet h6{
+  line-height: 30px;
+  font-size: 20px;
+  width: 90%;
+}
+
+.PastWorks h1{
+  width: 90%;
+}
+
+.Project button{
+  padding: 15px 15px;
+}
+
+.PeopleSay h6{
+  line-height: 30px;
+  font-size: 20px;
+  width: 90%;
+}
+
+.PeopleSay .card .card-body{
+  padding: 50px 10px !important;
+}
+.PeopleSay .card .card-text{
+  font-size: 30px;
+}
+
+.Contact h6{
+  line-height: 30px;
+  font-size: 20px;
+  width: 90%;
+  margin-bottom: 40px;
+}
+
+.Contact input{
+  width: 90%;
+}
+
+.Contact textarea{
+  width: 90%;
+}
+
+.Contact button{
+  width: 90%;
+  margin-bottom: 40px;
+}
+
+.footer{
+  width: 100%;
+}
+
+.footer img{
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.footer h6{
+  margin-top: 40px;
+}
+.skills2{
+  margin-top: -35px !important;
+}
+}
+
+
+
+@media (max-width:1184px) {
+  .TopText{
+    right: 8%;
+  }
+}
+
+@media (max-width:1100px) {
+  .TopText{
+    right: 1%;
+  }
+
+  .ProfileImage img{
+    width: 55%;
+  }
+
+  .HorizontalLine{
+    width:90px;
+    right: 80%;
+  }
+  html{
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width:1000px) {
+  .TopText{
+    right: 0%;
+  }
+  .ProfileImage img{
+    height: 450px;
+  }
+
+  .TopBlueDiv{
+    height: 600px;
+  }
+
+  .TopblackDiv{
+    height: 600px;
+  }
+  .ProfileImage h1{
+    font-size: 300%;
+  }
+
+  .ProfileImage h3{
+    font-size: 25px;
+  }
+  .ProfileImage h2{
+    font-size: 30px;
+  }
+  .HorizontalLine{
+    width: 60px;
+    right: 84%;
+    top: 50%;
+  }
+}
+
+ @media (max-width:900px) {
+  .ProfileImage h6{
+    width: 500px;
+  }
+
+  .HorizontalLine{
+    right: 81%;
+    top: 46%;
+  }
+  .Experience img{
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .TopText{
+    right: 14%;
+  }
+}
