@@ -14,7 +14,7 @@ document.onreadystatechange = function() {
       document.getElementById('interactive');
       document.getElementById('loading').style.visibility = "hidden";
       document.getElementById('LoadLater').style.visibility = "visible";
-    }, 1000);
+    }, 500);
   }
 }
 
